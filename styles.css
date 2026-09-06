@@ -1,0 +1,133 @@
+:root {
+    color-scheme: light;
+    --bg: #f6f4ef;
+    --paper: #fffcf7;
+    --ink: #1c1b18;
+    --muted: #5c5852;
+    --line: #ddd6c8;
+    --accent: #1468ea;
+    --max: 42rem;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.65;
+}
+
+header, main, footer {
+    width: min(var(--max), calc(100% - 2.5rem));
+    margin: 0 auto;
+}
+
+header {
+    padding: 2.75rem 0 1.5rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.brand {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0.7rem 0 0.35rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
+.updated {
+    margin: 0;
+    color: var(--muted);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.86rem;
+}
+
+main {
+    padding: 2rem 0 3.5rem;
+}
+
+.lede {
+    font-size: 1.08rem;
+    color: var(--muted);
+}
+
+h2 {
+    margin: 2.4rem 0 0.7rem;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    margin: 1.5rem 0 0.45rem;
+    font-size: 1.02rem;
+}
+
+p, li { margin: 0 0 0.85rem; }
+
+ul { padding-left: 1.2rem; }
+
+a { color: var(--accent); }
+
+.callout {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.15rem;
+    margin: 1.2rem 0 1.4rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.4rem;
+    font-size: 0.95rem;
+}
+
+th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.7rem 0.65rem;
+    border-bottom: 1px solid var(--line);
+}
+
+th {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+footer {
+    padding: 0 0 3rem;
+    color: var(--muted);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.84rem;
+}
+
+.home-card {
+    margin-top: 2rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.4rem 1.5rem;
+}
+
+.home-card a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
